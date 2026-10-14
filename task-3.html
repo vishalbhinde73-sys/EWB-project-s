@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 3: Conditional Logic</title>
+  <link rel="stylesheet" href="task-page.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">All assignments</a></p>
+    <h1>Assignment 3: Conditional Logic</h1>
+    <p>Enter a test score, then select Run. Output appears below and in the browser developer console.</p>
+    <form id="prompt-inputs" data-script="task 3.js">
+      <p><label>Test score: <input name="score" type="number" min="0" max="100" step="any" value="85" required></label></p>
+      <button type="submit">Run Assignment 3</button>
+    </form>
+    <p id="run-status" aria-live="polite">Enter a score above to run this assignment.</p>
+    <pre id="console-output" aria-live="polite"></pre>
+  </main>
+  <script src="console-output.js"></script>
+  <script src="prompt-runner.js"></script>
+</body>
+</html>

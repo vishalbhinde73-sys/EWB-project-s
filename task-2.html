@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2: Tip Calculator</title>
+  <link rel="stylesheet" href="task-page.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">All assignments</a></p>
+    <h1>Assignment 2: Tip Calculator</h1>
+    <p>Enter the bill amount and tip percentage, then select Run. Output appears below and in the browser developer console.</p>
+    <form id="prompt-inputs" data-script="task 2.js">
+      <p><label>Bill amount: $<input name="billAmount" type="number" min="0" step="any" value="100" required></label></p>
+      <p><label>Tip percentage: <input name="tipPercentage" type="number" min="0" step="any" value="15" required>%</label></p>
+      <button type="submit">Run Assignment 2</button>
+    </form>
+    <p id="run-status" aria-live="polite">Enter values above to run this assignment.</p>
+    <pre id="console-output" aria-live="polite"></pre>
+  </main>
+  <script src="console-output.js"></script>
+  <script src="prompt-runner.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capstone: Inventory Dashboard</title>
+  <link rel="stylesheet" href="task-page.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">All assignments</a></p>
+    <h1>Capstone: Inventory Dashboard</h1>
+    <p>Enter a product name and price, then select Run. Output appears below and in the browser developer console.</p>
+    <form id="prompt-inputs" data-script="capstone.js">
+      <p><label>Product name: <input name="productName" type="text" value="Monitor" required></label></p>
+      <p><label>Product price: $<input name="productPrice" type="number" min="0" step="any" value="150" required></label></p>
+      <button type="submit">Run Capstone</button>
+    </form>
+    <p id="run-status" aria-live="polite">Enter product details above to run the capstone.</p>
+    <pre id="console-output" aria-live="polite"></pre>
+  </main>
+  <script src="console-output.js"></script>
+  <script src="prompt-runner.js"></script>
+</body>
+</html>
